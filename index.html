@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>suh dude.</title>
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            m = checkTime(m);
+            document.getElementById('time').innerHTML =
+                h + ":" + m;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};
+            return i;
+        }
+    </script>
+
+</head>
+
+<body onload="startTime()">
+
+<div class="main_ui">
+
+    <!-- Menu bar bottom -->
+    <div class="menu_bar">
+
+        <nav class="menu_start">
+
+
+            <!-- Menu bar Pop up when Started -->
+            <li class="startbut"><img src="img/w95p.png" alt="">Start
+                <ul>
+                    <div class="sidebalk"></div>
+                    <li class="listitem"><img src="img/programs.png" alt=""><a href="#">Rubrics</a></li>
+                    <li class="listitem"><img src="img/documents.png" alt=""><a href="#">Projects</a></li>
+                    <li class="listitem"><img src="img/settings.png" alt=""><a href="#">Settings</a></li>
+                    <li class="listitem"><img src="img/find.png" alt=""><a href="#">Find</a></li>
+
+                    <li class="listitem"><img src="img/help.png" alt=""><a href="#">About Me</a></li>
+                    <li class="listitemtop"><img src="img/run.png" alt=""><a href="#">Run...</a></li>
+                    <li class="listitembord"><img src="img/shut-down.png" alt=""><a href="#">Shut Down...</a></li>
+                </ul>
+            </li>
+
+        </nav>
+
+
+
+            <div class="timebox">
+                <div id="time"></div>
+            </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

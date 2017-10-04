@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #51AFC0;
+    overflow: hidden;
+}
+
+main_ui {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu_bar {
+    background-color: #BFBFBF;
+    /* background: linear-gradient(#ffffff 1%, #C0C0C0 99%, #ffffff); */
+    border-top: solid white 3px;
+    position: absolute;
+    height: 39px;
+    width: 100vw;
+    bottom: 0vh;
+}
+
+
+.menu_start {
+    position: absolute;
+    display: block;
+    left: 3px;
+    top: 8%;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    background-color: #BFBFBF;
+}
+
+.startbut img {
+    float:left;
+}
+
+
+.menu_start > li {
+    list-style-type: none;
+    float: left;
+    display: block;
+    margin: 0px 0px;
+    position: relative;
+    padding: 5px;
+    width: 60px;
+    background-color: #BFBFBF;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+.menu_start .startbut:hover {
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid white 2px;
+    border-bottom: solid white 2px;
+}
+
+
+.sidebalk {
+    background-image:  url("../img/sidebalk.jpg");
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    height: 348px;
+    width: 50px;
+}
+
+.listitem:hover {
+    background-color: #00007F;
+    width: 200px;
+}
+
+.listitembord {
+    border-top: solid white 1px;
+}
+
+.listitembord:hover {
+    background-color: #00007F;
+    width: 200px;
+}
+
+.listitemtop {
+    border-bottom: solid darkgray 1px;
+}
+
+.listitemtop:hover {
+    background-color: #00007F;
+    width: 200px;
+}
+
+.menu_start > li ul {
+    position: absolute;
+    bottom: 100%;
+    background-color: #BFBFBF;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    width: 200px;
+}
+
+.menu_start > li ul img {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 15%;
+    left: 5%;
+}
+
+.menu_start li:hover > ul {
+    display: block;
+}
+
+.menu_start li ul {
+    margin: 0px;
+    padding-left: 50px;
+    display: none;
+}
+
+.menu_start li ul li {
+    position: relative;
+    list-style-type: none;
+    text-align: left;
+    height: 50px;
+}
+
+.menu_start li ul li a {
+    display: block;
+    padding: 12px 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu_start li ul li:hover a {
+    color: white;
+}
+
+
+
+.timebox {
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    width: 60px;
+    height: 27px;
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid white 2px;
+    border-bottom: solid white 2px;
+}
+
+
+
+#time {
+    position: relative;
+    top: 15%;
+    left: 20%;
+    font-family: "Segoe UI";
+}
+
