@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <title>suh dude.</title>
-
-    <script>
-        function startTime() {
-            var today = new Date();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            m = checkTime(m);
-            document.getElementById('time').innerHTML =
-                h + ":" + m;
-            var t = setTimeout(startTime, 500);
-        }
-        function checkTime(i) {
-            if (i < 10) {i = "0" + i};
-            return i;
-        }
-    </script>
-
+    <title>w95 slider test</title>
+    <script src="slider95.js"></script>
+    <link rel="stylesheet" href="w95.css">
 </head>
-
-<body onload="startTime()">
-
-<div class="main_ui">
-
-    <!-- Menu bar bottom -->
-    <div class="menu_bar">
-
-        <nav class="menu_start">
+<body>
 
 
-            <!-- Menu bar Pop up when Started -->
-            <li class="startbut"><img src="img/w95p.png" alt="">Start
-                <ul>
-                    <div class="sidebalk"></div>
-                    <li class="listitem"><img src="img/programs.png" alt=""><a href="#">Rubrics</a></li>
-                    <li class="listitem"><img src="img/documents.png" alt=""><a href="#">Projects</a></li>
-                    <li class="listitem"><img src="img/settings.png" alt=""><a href="#">Settings</a></li>
-                    <li class="listitem"><img src="img/find.png" alt=""><a href="#">Find</a></li>
+<!-- Whole slider / (can be made as pop up with display styling) -->
+<div class="cont_pop">
 
-                    <li class="listitem"><img src="img/help.png" alt=""><a href="#">About Me</a></li>
-                    <li class="listitemtop"><img src="img/run.png" alt=""><a href="#">Run...</a></li>
-                    <li class="listitembord"><img src="img/shut-down.png" alt=""><a href="#">Shut Down...</a></li>
-                </ul>
-            </li>
+    <div class="cont_pop_bar">
+        <div class="cont_pop_bar_title">
+           <!-- add a title here-->
+        </div>
 
-        </nav>
+        <div class="cont_pop_bar_min">
+            <img src="img/min.png" alt="" width="15">
+        </div>
 
+        <div class="cont_pop_bar_max">
+            <img src="img/maxi.png" alt="" width="15">
+        </div>
 
-
-            <div class="timebox">
-                <div id="time"></div>
-            </div>
+        <div class="cont_pop_bar_close">
+            <a href="#"><img src="img/close.png" alt="" width="15"></a>
+        </div>
 
     </div>
 
+<div class="cont_pop_content">
+    <div class="cont_pop_content_story">
 
 
+        <h1>Title of slider</h1>
+
+        <div id="story_block" class="current-course0">
+            <h1>Course 1</h1>
+            <p>Content of your first course</p>
+        </div>
 
 
+        <!-- buttons -->
+        <div class="storynext">
+            <a onClick="selectCourse(1)">Next Course</a>
+        </div>
+
+        <div class="storyprev">
+            <a onClick="selectCourse(0)">Previous Course</a>
+        </div>
+
+        <div class="storyenter">
+            <a onClick="">Enter</a>
+        </div>
 
 
+        <div class="storytext">
+            <p><u>D</u>ruk op "Enter" om de course te bekijken.</p>
+        </div>
+        <!-- end buttons -->
 
 
+        <div class="story_justlin">
+            <!--just a line-->
+        </div>
 
+    </div>
 </div>
+</div>
+<!-- End slider  -->
+
 
 </body>
 </html>
