@@ -1,12 +1,14 @@
-# W95_Menu
-Windows 95 style menu
+# W95_Slider
+Windows 95 style slider
 
-First draft for my portfolio project. </br>
-recreating a windows 95 UI.
+This project is a javascript dynamic slider in windows 95 style. </br>
 
-![Imgur](https://i.imgur.com/0IxrTSM.jpg)
+The code can be used without the styling if you look into the Javascript there is a comment stating change this to get content inside your own div. This is the only thing you need to change in order to use this slider without the contributed styling from w95.css.
 
-Program language:
 
-Html, Css, Javasript
+![Imgur](https://i.imgur.com/yoZQGct.jpg)
+
+
+
+
 
